@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google image</title>
+    <style>
+        .img {
+            width: 272px;
+            height: 92px;
+            margin: 0 auto;
+            margin-top: 150px;
+        }
+
+        .img img {
+            height: 92px;
+        }
+
+        .item {
+            width: 1000px;
+            height: 44px;
+            margin: 0 auto;
+            margin-top: 12px;
+            transform: translateX(20%);
+        }
+
+        .ipt {
+            width: 600px;
+            padding: 12px 6px;
+        }
+
+        .btn {
+            width: 178px;
+            height: 44px;
+        }
+
+        .advice {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            text-decoration: none;
+            color: #393939;
+        }
+
+        .image-item {
+            position: absolute;
+            right: 68px;
+            top: 12px;
+            color: #393939;
+            text-decoration: none;
+        }
+
+        .image-item:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://www.google.com/search">
+        <div class="img"><img src="Google_img.png" alt="google"></div>
+        <div class="item">
+            <input type="text" name="q" class="ipt"></input>
+            <input type="submit" value="Google Search" class="btn"></input>
+        </div>
+        <div class="butn">
+            <a class="image-item" href="Google.html">return</a>
+        </div>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+</head>
+<style>
+    .img {
+        width: 272px;
+        height: 92px;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+
+    .item {
+        width: 1000px;
+        height: 44px;
+        margin: 0 auto;
+        margin-top: 12px;
+        transform: translateX(18%);
+    }
+
+    .ipt {
+        width: 600px;
+        padding: 12px 6px;
+    }
+
+    .btn {
+        width: 178px;
+        height: 44px;
+    }
+
+    .advice {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        text-decoration: none;
+        color: #393939;
+    }
+
+    .image-item {
+        position: absolute;
+        right: 102px;
+        top: 12px;
+        color: #393939;
+        text-decoration: none;
+    }
+
+    .advice:hover {
+        text-decoration: underline;
+    }
+
+    .image-item:hover {
+        text-decoration: underline;
+    }
+
+    .luck {
+        display: block;
+        width: 150px;
+        height: 44px;
+        margin: 20px auto;
+    }
+</style>
+</head>
+
+<body>
+    <form action="https://www.google.com/search">
+        <div class="img"><img src="google_logo.svg" alt="google" /></div>
+        <div class="item">
+            <input type="text" name="q" class="ipt"></input>
+            <input type="submit" value="Google Search" class="btn"></input>
+        </div>
+        <div class="butn">
+            <a class="image-item" href="Google_image.html">image</a>
+            <a class="advice" href="Google_advanced.html">advanced</a>
+        </div>
+        <button class="luck">
+            I'm Felling Luck
+        </button>
+        <script>
+            var btn = document.querySelector('.luck');
+            btn.addEventListener('click', function () {
+                history.back();
+            })
+        </script>
+    </form>
+</body>
+
+</html>
